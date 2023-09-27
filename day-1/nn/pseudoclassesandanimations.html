@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <style>
+      @keyframes slide {
+
+        /* from{width: 100px;}
+        to{width: 200px;} */
+        0%{width: 100px;}
+        20%{width: 200px;}
+        40%{width: 300px;}
+        60%{width: 400px;}
+        80%{width: 500px;}
+        100%{width: 600px;}
+        
+      }
+
+      img{
+        /* animation-name: slide;
+        animation-duration:3s;
+        animation-delay: 2s;
+        animation-iteration-count : infinite;
+        animation-direction: alternate; */
+        /* animation: slide 3s 2s infinite alternate; */
+
+      }
+
+      @keyframes colorchange {
+        from{background-color: aqua;}
+        to{background-color: green;}
+      }
+
+      @keyframes color {
+        30%{background-image: url("../images/cute-little-puppy-pets-dog_483438-38.avif");}
+        10%{background-image: url("../images/puppy-that-is-walking-snow_1340-37228.avif");}
+        50%{background-image: url("../images/1.jpg");}
+        100%{background-image: url("../images/images.jpeg");} 
+        
+      }
+
+      @keyframes display {
+        from{
+                transform: rotate(0deg);
+        }
+
+        to{
+                transform: rotate(360deg);
+        }
+        
+      }
+
+      .item{
+        border: 2px solid green;
+        width: 600px;
+        height: 600px;
+        animation-name: color;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        background-repeat: no-repeat;
+        background-size: 150px;        
+      }
+      .tyre{
+        animation-name: display;
+        animation-duration: 4s;
+        /* animation-direction: alternate-reverse; */
+        animation-fill-mode: forwards;
+        border-radius: 50%;
+        animation-iteration-count: infinite;
+      }
+      .load,.new{
+        border: 2px solid transparent;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: red;
+
+      }
+
+      @keyframes load1 {
+        from{
+            transform: translate(20px,30px);
+            background-color: aqua;
+            height: 30px;
+            width: 30px;
+        }
+        to{
+            transform: translate(100px,100px);
+            background-color: orange;
+            height: 70px;
+            width: 80px;
+            /* transform: translateZ(40px); */
+        }
+        
+      }
+     
+
+      .load1{
+        animation-name: load1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes new1 {
+        from{
+            /* transform: translateZ(20px); */
+            background-color: green;
+            transform: scale(1.5,1.5);
+        }
+
+        to{
+            /* transform: translateZ(70px); */
+            background-color: yellow;
+            transform: scale(1,1);
+        }
+      }
+      @keyframes new2 {
+        from{
+            /* transform: translateZ(20px); */
+            background-color: green;
+            transform: scale(1.5,1.5);
+        }
+
+        to{
+            /* transform: translateZ(70px); */
+            background-color: yellow;
+            transform: scale(1,1);
+        }
+      }
+
+      .new1{
+        animation-name: new1;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+      .new2{
+        animation-name:new2 ;
+        animation-duration: 2s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+
+      }
+    </style>
+</head>
+<body>
+ <div style="display: flex;gap: 5px;">
+    <!-- <img src="../images/car.jpeg"/> -->
+    <div class="item"></div>
+    <!-- <img src="../images/tyre.jpg" class="tyre" height="50"> -->
+    <!-- <div class="load load1"></div>
+    <div class="load"></div>
+    <div class="load"></div>
+    <div class="load"></div>
+    <div class="load"></div> -->
+
+ </div>
+ <!-- <div style="display: flex;gap: 5px;"> -->
+    <!-- <img src="../images/car.jpeg"/> -->
+    <!-- <div class="item"></div> -->
+    <!-- <img src="../images/tyre.jpg" class="tyre" height="50"> -->
+    <!-- <div class="new new1"></div>
+    <div class="new new2"></div>
+    <div class="new"></div>
+    <div class="new"></div>
+    <div class="new"></div> -->
+
+ <!-- </div> -->
+ 
+    
+</body>
+</html>
+
+
+<!-- 
+pseudo classes:
+--------------
+
+these type of selectors can be used for specfic action
+
+selector:state
+hover
+focus
+active
+:nth-child(2), 
+:nth-child(2n),
+nth-child(2n+1),
+:first-child(),
+:last-child(),
+:not()
+
+css transforms
+-------------
+1.2d transform
+2.3d transform
+
+syntax for transition: transform transition-duration
+
+assignments
+-----------
+chess board using pseudo classes
+cars transition and transforms
+2d and 3d transforms
+background clr changing transitions
+width and height increasing transitions
+national flag with ashoka chakra rotating using transforms and transitions.
+ -->

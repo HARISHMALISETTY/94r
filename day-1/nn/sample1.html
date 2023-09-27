@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<style>
+
+   [type]
+   {
+    margin-bottom: 20px;
+    border-radius: 10px;
+   }
+   
+   [name="firstname"]
+   {
+    background-color: orangered;
+   }
+
+   [value|="some"]{
+    height: 40px;
+   }
+
+   [name$="name"]{
+    box-shadow: 2px 2px black;
+   }
+
+   [type^="sub"]{
+    background-color: grey;
+    width: 70px;
+    padding: 10px;
+    /* border: none; */
+    border-color: transparent;
+   }
+
+   [name*="sec"]
+   {
+    background-color: aqua;
+    padding: 10px;
+   }
+
+   [placeholder*=" pass"]{
+    background-color: palegreen;
+    box-shadow: 2px 2px orange;
+   }
+
+   
+
+  
+    
+</style>
+<body>
+
+    <form>
+        <input type="text" name="firstname" value="some-thing"/>
+        <input type="text" name="secondname"/><br>
+        <input type= "password" name="password" placeholder="enter password"/>
+        <input type="submit"/>
+    </form>
+    <form>
+        <input type="text" name="firstname" value="some-thing"/>
+        <input type="text" name="secondname"/><br>
+        <input type= "password" name="password" placeholder="enter password"/>
+        <input type="submit"/>
+    </form>
+    <form>
+        <input type="text" name="firstname" value="some-thing"/>
+        <input type="text" name="secondname"/><br>
+        <input type= "password" name="password" placeholder="enter password"/>
+        <input type="submit"/>
+    </form>
+    
+
+</body>
+</html>
+
+<!-- css selectors
+------------------
+1.simple selectors
+2.combinators/relationship selectors
+3.attribute selectors
+4.pseudo classes
+5.pseudo elements
+
+
+css combinators
+--------------
+1.descendent selectors (space)
+
+2.child selectors(>)
+
+3.adjacent sibling selectors(+)
+
+4.general sibling selectors(~).
+
+
+Attribute selectors
+------------------
+
+-->

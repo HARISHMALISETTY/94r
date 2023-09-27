@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width:0px) and (max-width:426px){
+            img{
+                width: 60%;
+                height: 60%;
+            }
+            .container
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: green;
+            }
+            .container2{
+                display: none;
+            }
+
+            nav{
+                background-color: burlywood;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+            .item3{
+                
+                /* padding: 40px 30px 40px 30px; */
+                align-self: center;
+               
+            }
+            
+        }
+
+        @media screen and (min-width:426px) and (max-width:768px){
+            nav{
+                background-color: burlywood;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container{
+                display: none;
+            }
+
+            .container2{
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: orange;
+            }
+
+        }
+       
+    </style>
+</head>
+<body>
+<div class="container">
+   <img src="../images/balaji.png" class="balaji">
+   <img src="../images/BABA.jpg" class="baba">
+   <img src="../images/balaji.png" class="balaji">
+   <img src="../images/BABA.jpg" class="baba">
+   <img src="../images/balaji.png" class="balaji">
+   <img src="../images/BABA.jpg" class="baba">
+  </div> 
+  <div class="container2">
+   <div style="display: flex;">
+     <img src="../images/balaji.png" class="balaji">
+    <img src="../images/BABA.jpg" class="baba">
+    </div>
+    <div style="display: flex;">
+        <img src="../images/balaji.png" class="balaji">
+       <img src="../images/BABA.jpg" class="baba">
+    </div>
+       <div style="display: flex;">
+        <img src="../images/balaji.png" class="balaji">
+       <img src="../images/BABA.jpg" class="baba">
+    </div>
+    
+   </div> 
+
+   <nav>
+    <div class="item3">home</div>
+    <div class="item3">abouts us</div>
+    <div class="item3">contact us</div>
+    <div class="item3">login</div>
+    <div class="item3">signup</div>
+   </nav>
+   
+</body>
+</html>
+
+<!--
+    to achieve the responsiveness of webpage, we use media queries.
+
+    media queries can be appicable for devics like
+
+    1.screen
+    2.pages
+    3.screen readers
+    4.All
+  -->
+
+ 

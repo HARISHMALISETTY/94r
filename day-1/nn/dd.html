@@ -4,52 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style> table,th,tr,td{
-        border: 1px solid black;
-        border-collapse: collapse;
-    }</style>
-</head>
-<body>
-    <div style="border: 1px solid black; height: 300px; display: flex;">
-        <div style="border: 1px solid blue; height: 200px; width: 250px;">
-            <table>
-                <tr>
-                    <th><h1>Name<h1></h1></th>
-                    <th><h1>icon<h1></h1></th>
-                </tr> 
-                <tr>
-                    <th><h1>Name<h1></h1></th>
-                    <th><h1>icon<h1></h1></th>
-                </tr> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+          p{
+            /* font-size: 20px;
+             */
+             /* font-size: 130%; */
+          }
 
-            </table>
-        </div>
-        <div style="border: 1px solid green; height: 250px; width: 250px;">
-            <table>
-                <tr>
-                    <th><h1>Name<h1></h1></th>
-                    <th><h1>icon<h1></h1></th>
-                </tr> 
-                <tr>
-                    <th><h1>Name<h1></h1></th>
-                    <th><h1>icon<h1></h1></th>
-                </tr> 
+          .para{
+            color: gray;
+          }
 
-            </table>
-        </div>
-        <div style="border: 1px solid green; height: 150px; width: 150px;">
+          .para1{
+            background-color: aqua;
+            text-decoration: underline;
+            line-height: 20px;
+            
+
+          }
+
+          .para,.para1,.para2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          }
+         
+
+          .sec1{
+            height: 300px;          
+            /* width: 300px; */
+            white-space:wrap;
+            /* border-width: 2px;
+            border-style: dashed;
+            border-color: red; */
+            border: 2px dashed red;
+            border-radius: 30px;
+
+          }
+
+          .sec2{
+            background-color: blueviolet;
+            height: 300px;
+            max-height: 250px;
+            width: 100px;
+            overflow-x: scroll;
+
+          }
+         
+          a{
+            text-decoration: none;
+            text-transform: capitalize;
+            letter-spacing: 5px;
+            text-shadow:2px 2px white;
+        }
+          
+        .sec3{
+            background-color: black;
+            text-align: center;
+            border-radius: 20%;
+            width: 200px;
+        }
+        img{
+            width: 50%;
+            border-radius: 40%;
+        }
+
+        .sec4{
+            width: 200px;
+            height: 300px;
+            border: 2px solid black;
+            background-image: url("../images/BABA.jpg");
+            /* background-repeat: no-repeat;
+            background-attachment: fixed; */
+            background-repeat: no-repeat;
+        }
+
         
-        </div>
-    </div>
-    <div style="border: 1px solid black; height: 300px; display: flex;">
-        <div style="border: 1px solid blue; height: 100px; width: 150px;"></div>
-        <div style="border: 1px solid green; height: 100px; width: 150px;"></div>
-        <div style="border: 1px solid green; height: 100px; width: 150px;"></div>
-    </div>
-    <div style="border: 1px solid black; height: 100px; display: flex;">
-        <div style="border: 1px solid blue; height: 100px; width: 150px;"></div>
-        <div style="border: 1px solid green; height: 100px; width: 150px;"></div>
-        <div style="border: 1px solid green; height: 100px; width: 150px;"></div>
-    </div>
+    .main-div{
+        /* border: 2px solid red; */
+        height: 300px;
+        width: 90vw;
+        border-radius: 20px;
+       
+    }
+
+    .div1,.div2,.div3{
+        border: 2px solid red;
+        height: 60px;
+        width: 90px;
+        border-radius: 20px;  
+        text-align: center;
+        margin-right: 100px;}
+
+       .div11,.div22,.div33{
+        background-color: orange;
+        width: 50px;
+        text-align: center;
+        height: 70px;
+        padding: 30px;
+        /* margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px; */
+        margin: 20px 30px 40px 70px;
+
+       } 
+       
+
+    
+    </style>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+
+<div class="sec1">
+    <p class="para para1 para2">Lorem ipsum,dolor sit amet consectetur adipisicing elit. Repudiandae quisquam omnis quae dolorum atque quam ipsa aliquid voluptatum nulla, est mollitia facere officiis doloremque magnam pariatur vero, sit fugiat hic!</p>
+
+    <p class="para1 123">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae quisquam omnis quae dolorum atque quam ipsa aliquid voluptatum nulla, est mollitia facere officiis doloremque magnam pariatur vero, sit fugiat hic!</p>
+    <i class="fa fa-whatsapp" style="font-size: 30px; color: green; background-color: black;"></i>
+
+</div>
+
+<div class="sec2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta porro quis omnis alias, optio vitae animi vero ut quidem aliquam dolore ipsa cumque molestias, dolorum magni aut tempore enim Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem minima quasi voluptas officiis odit, sit commodi veniam corrupti quisquam quis deserunt saepe voluptate possimus ipsam! Tempora consequatur maxime vitae!</p>
+    <a href="https://github.com/cheeraaravind/Aravind/settings/pages">welcome</a>
+   
+</div>
+<div class="sec3">
+    <img src="../images/balaji.png">
+</div>
+<div class="sec4">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa eos vitae, ea necessitatibus ipsam, nisi maiores quo veritatis, expedita perspiciatis deserunt perferendis id praesentium dolor molestias laborum voluptatum laboriosam optio.</p>
+
+</div>
+<br>
+
+<div class="main-div">
+    <div class="div1">
+        <img src="../images/login.jpg">
+    </div><br>
+    <div class="div2"> <img src="../images/login.jpg"></div><br>
+    <div class="div3"> <img src="../images/login.jpg"></div><br>
+</div>
+
+<div class="new-div">
+<div class="div11">1</div>
+<div class="div22">2</div>
+<div class="div33">3</div>
+</div>
 </body>
 </html>
+
+<!-- 
+
+    vw---view-port width
+
+
+ width---px,%,vw.
+ height---px,%,vh.
+text-decoration
+border properties:
+----------------
+1.border-width
+2.border-style
+3.border-color.
+
+4.border----- shorthand property for border
+
+
+CSS BOXMODEL:
+1.content
+2.padding
+3.border
+4.margin
+
+padding:
+-------
+
+padding-left:20px,
+padding-top,
+padding-bottom,
+padding-right
+-->

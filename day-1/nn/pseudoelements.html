@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elements</title>
+    <style>
+        p::first-line{
+            color: green;
+            background-color: yellow;
+            font-size: 50px;
+        }
+        p::first-letter{
+            color: red;
+            background-color: orange;
+            border-radius: 50%;
+            padding: 15px;
+        }
+        /* p::after{
+            content: "hello";
+            color: green;
+            font-size: 200px;
+
+        }
+        p::before{
+            content: "hello";
+            color: green;
+            font-size: 200px;            
+        } */
+
+        p::selection{
+            background-color: green;
+            color: white;
+        }
+
+        li::marker{
+            color: red;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum sit esse ex modi eveniet illo omnis. Cumque rerum, modi reprehenderit atque minus delectus? Aliquam quaerat, esse laborum earum aut corrupti!</p>
+
+   <ol>
+    <li>list1</li>
+    <li>list2</li>
+    <li>list3</li>
+    <li>list4</li>
+   </ol> 
+</body>
+</html>
+
+<!-- pseudo elements
+
+syntax: selector::pseudo-element
+1.first-line
+2.first-letter
+
+-->
